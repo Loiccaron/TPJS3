@@ -1,0 +1,54 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    color: #444;
+    /* Margin bottom by footer height */
+    margin: 0 0 40px 0;
+    background-image: url(background.jpg);
+    background-size: 100% 98%;
+}
+
+#header {
+    margin-bottom: 1em;
+    padding: 0.3em 0.5em;
+    color: #888;
+    background-color: #fff;
+    text-align: center;
+}
+
+#header h1 {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    font-size: xx-large;
+    border-bottom: 5px solid #c5917f;
+    width: 420px;
+}
+
+#header h1 .subtitle {
+    font-size: x-large;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    /* Set the fixed height of the footer here */
+    height: 30px;
+}
+
+#footer p {
+    padding: 0;
+    margin: 9px 0 0 0;
+    font-size: 12px;
+}
+
+#content {
+    width: 66%;
+    margin: 0 auto;
+}

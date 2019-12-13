@@ -1,0 +1,36 @@
+.menu{
+
+    color: #c5917f;
+    text-align: center;
+    text-decoration: underline;
+    background-color: rgba(251, 252, 252, 0.85);
+    padding: 0.1em 0.1em;
+    border-radius: 10px;
+}
+
+#list table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: rgba(251, 252, 252, 0.85);
+    margin: 0px auto;
+}
+
+#list th {
+    border: 2px solid #c5917f;
+    text-align: center;
+    padding: 5px;
+}
+
+#list td {
+    border: 1px solid #c5917f;
+    padding: 5px;
+}
+
+#list th.up::before {
+    content: '▴ ';
+}
+
+#list th.down::before {
+    content: '▾ ';
+}
