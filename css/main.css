@@ -13,7 +13,7 @@ body {
 
 #header {
     margin-bottom: 1em;
-    padding: 0.3em 0.5em;
+    padding: 1em 0.5em;
     color: #888;
     background-color: #fff;
     text-align: center;
@@ -22,10 +22,11 @@ body {
 #header h1 {
     padding: 0;
     margin: 0;
+    border-right: 100px;
     font-family: Verdana, sans-serif;
     font-size: xx-large;
     border-bottom: 5px solid #c5917f;
-    width: 420px;
+    width: 220px;
 }
 
 #header h1 .subtitle {
@@ -54,7 +55,7 @@ body {
 }
 
 #search {
-    float: right;
+    float: left;
     margin-top: 9px;
     width: 250px;
 }
@@ -64,8 +65,7 @@ body {
     width: 230px;
     height: 30px;
     position: relative;
-    left: 10px;
-    float: left;
+    float: right;
     line-height: 22px;
 }
 
@@ -73,7 +73,7 @@ body {
     position: absolute;
     width: 0px;
     float: Left;
-    margin-left: 210px;
+    margin-left: 200px;
     -webkit-transition: all 0.7s ease-in-out;
     -moz-transition: all 0.7s ease-in-out;
     -o-transition: all 0.7s ease-in-out;
