@@ -39,41 +39,46 @@
         <br><br>
 
         <div class="form offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10">
-            <div class="form-group row">
-                <div class="offset-lg-2 offset-md-2"></div>
-                <label class="col-lg-2 col-md-2 col-form-label">Ingredient name: </label>
-                  <div class="col-lg-4 col-md-4">
-                    <input type="text" id="name" class="form-control">
-                  </div>
-            </div>
-            <div class="form-group row">
-                <div class="offset-lg-2 offset-md-2"></div>
-                <label class="col-lg-2 col-md-2 col-form-label">Price</label>
-                  <div class="col-lg-4 col-md-4">
-                    <input type="number" id="prix" class="form-control">
-                  </div>
-            </div>
-            <fieldset class="form-group">
-                <div class="row">
+                <div class="form-group row">
                     <div class="offset-lg-2 offset-md-2"></div>
-                    <legend for="local" class="col-form-label col-lg-2 col-md-2 pt-0">Local ingredient?</legend>
-                    <div class="col-lg-3 col-md-3">
-                        <select id="local">
-                            <option value="yes">Yes</option> 
-                            <option value="no" selected>No</option>
-                        </select>
+                    <label class="col-lg-2 col-md-2 col-form-label">Dish name: </label>
+                      <div class="col-lg-4 col-md-4">
+                        <input type="text" id="name" class="form-control">
+                      </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-lg-2 offset-md-2"></div>
+                    <label class="col-lg-2 col-md-2 col-form-label">Preparation price:</label>
+                      <div class="col-lg-4 col-md-4">
+                        <input type="number" id="prix" class="form-control">
+                      </div>
+                </div>
+                <div class="form-group row">
+                        <div class="offset-lg-2 offset-md-2"></div>
+                        <label class="col-lg-2 col-md-2 col-form-label">Preparation time:</label>
+                          <div class="col-lg-4 col-md-4">
+                            <input type="number" id="preparation" class="form-control">
+                          </div>
+                    </div>
+                <div class="form-group row">
+                    <div class="offset-lg-2 offset-md-2"></div>
+                    <div class="col-lg-2 col-md-2">Ingredients:</div>
+                        <div class="col-lg-4 col-md-4">
+                          <div class="checkbox" id="checkbox">
+                            
+                          </div>
+                        </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="offset-lg-4 offset-md-4"></div>
+                    <div class="col-lg-2 col-md-2">
+                        <button type="submit" class="btn" id="button">Validate</button>
                     </div>
                 </div>
-            </fieldset>
-            <div class="form-group row">
-                <div class="offset-lg-4 offset-md-4"></div>
-                <div class="col-lg-2 col-md-2">
-                    <button type="submit" class="btn" id="button">Validate</button>
-                </div>
-            </div>
-            
         </div>
         <p class="offset-lg-1 col-lg-10 p" id="alert"></p>
+        
         <div id="footer">
             <p>&copy; CARON Loic - BENNOUNA Amine - CIR 2 - 2019/2020</p>
         </div>
@@ -82,9 +87,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="./js/ingredients.js"></script>
-        <script src="./js/ingredient.js"></script>
         <script src="./js/plats.js"></script>
-        <script src="./js/addIngredients.js"></script>
+        <script src="./js/ingredient.js"></script>
+        <script src="./js/plat.js"></script>
+        <script src="./js/addPlat.js"></script>
 
     </body>
 </html>
