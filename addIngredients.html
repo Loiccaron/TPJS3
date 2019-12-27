@@ -4,14 +4,13 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./css/main.css" />
-        <link rel="stylesheet" type="text/css" href="./css/menu.css" />
         <title>TP2 - Ex - Javascript - 2019/2020</title>
     </head>
     <body>
         <div id="header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-2">
+                    <div class="col-md-2 col-lg-2 col-sm-2">
                         <div class="btn-group">
                             <!-- Split dropright button -->
                             <div class="btn-group dropright">
@@ -29,42 +28,60 @@
                             </div>
                         </div>
                     </div>
-                    <div class="offset-md-2 offset-lg-3"></div>
-                    <div class="col-md-4 col-lg-3">
-                            <h1>Mavrommatis </h1>
+                    <div class="offset-md-3 offset-lg-3"></div>
+                    <div class="col-md-3 col-lg-3 col-sm-2">
+                        <h1>Mavrommatis </h1>
                     </div>
-                    <div class="offset-md-1"></div>
-                    <div class="col-md-3">
-                        <div class="search">
-                            <input id="searchbar" type="text" class="form-control input-sm" maxlength="64" placeholder="Search" required/>
-                            <button id="validate" type="submit" class="btn btn-sm">Search</button>
-                        </div>
-                    </div>
-                       
                 </div>
             </div>
         </div>
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3" id="content">
-                    <h1 class="menu">Menu du jour:</h1>
+        <br><br>
+
+        <form class="form offset-lg-1 col-lg-10 offset-md-1 col-md-10 offset-sm-1 col-sm-10">
+            <div class="form-group row">
+                <div class="offset-lg-2 offset-md-2"></div>
+                <label class="col-lg-2 col-md-2 col-form-label">Ingredient name : </label>
+                  <div class="col-lg-4 col-md-4">
+                    <input type="text" class="form-control">
+                  </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-lg-2 offset-md-2"></div>
+                <label class="col-lg-2 col-md-2 col-form-label">Price</label>
+                  <div class="col-lg-4 col-md-4">
+                    <input type="number" class="form-control" id="inputPassword3">
+                  </div>
+            </div>
+            <fieldset class="form-group">
+                <div class="row">
+                    <div class="offset-lg-2 offset-md-2"></div>
+                    <legend class="col-form-label col-lg-2 col-md-2 pt-0">Local ingredient?</legend>
+                    <div class="col-lg-3 col-md-3">
+                      <div class="form-check">
+                        <div class="offset-lg-2 offset-md-2"></div>
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Oui
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <div class="offset-lg-2 offset-md-2"></div>
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                          Non
+                        </label>
+                      </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="form-group row">
+                <div class="offset-lg-4 offset-md-4"></div>
+                <div class="col-lg-2 col-md-2">
+                    <button type="submit" class="btn">Validate</button>
                 </div>
             </div>
-        </div>
-
-        <div id="list">
-            <table class="table table-bordered" id = "tab">
-                <tr>
-                    <th>Nom</th>
-                    <th>Temps de préaration</th>
-                    <th>Ingrédients</th>
-                    <th>Produits locaux</th>
-                    <th>Prix de préparation</th>
-                    <th>Prix total</th>
-                </tr>
-            </table>
-        </div>
+        </form>
 
         <div id="footer">
             <p>&copy; CARON Loic - BENNOUNA Amine - CIR 2 - 2019/2020</p>
@@ -75,12 +92,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="./js/ingredients.js"></script>
         <script src="./js/plats.js"></script>
-        <script src="./js/ingredient.js"></script>
-        <script src="./js/plat.js"></script>
-        <script src="./js/displayLine.js"></script>
-        <script src="./js/displayTab.js"></script>
-        <script src="./js/search.js"></script>
-        <script src="./js/main.js"></script>
+        <script src="./js/addIngredients.js"></script>
 
     </body>
 </html>
