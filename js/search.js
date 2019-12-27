@@ -5,7 +5,7 @@ let search = (function(){
     input.addEventListener('keyup', event => {
         
         let string = input.value.toUpperCase();
-        let tab = document.getElementById('tab')
+        let tab = document.getElementById('tab');
         let len = tab.getElementsByTagName('tr').length;
 
         for(let i = 1; i < len; i++){
